@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.app-container {
+  max-width: 1110px;
+  margin: auto;
+}
+
+.main-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 56px;
+  color: #3e4c59;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-title {
+    font-size: 48px;
+    margin-top: 48px;
+    margin-bottom: 25px;
+  }
+}
+
+.custom-tabs-container {
+  display: flex;
+  justify-content: space-around; /* Adjust spacing between tabs */
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  list-style-type: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-tabs-container li {
+  margin: 0 10px; /* Increase the margin around each tab */
+}
+
+.custom-tab-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  margin: 0px;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center; /* Center align text and icon */
+}
+
+.custom-tab-btn:hover {
+  background-color: #ddd;
+}
+
+.active-custom-tab-btn {
+  background-color: black;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.active-custom-tab-btn:hover {
+  background-color: #444;
+}
+
+.custom-product-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  max-width: 1140px;
+  margin-top: 50px;
+}
+
+.custom-product-item-container {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  border-radius: 12px;
+  margin-right: 20px;
+  margin-bottom: 32px;
+  flex-shrink: 0;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.06);
+}
+
+.custom-product-item-image {
+  width: 100%;
+  border-radius: 5px;
+  height: 400px;
+  background-size: cover;
+  padding: 10px;
+}
+
+.custom-badge {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  padding: 6px 10px;
+  font-weight: bold;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 50%;
+}
+
+.custom-product-item-details-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 24px 32px 24px;
+  flex-grow: 1;
+}
+
+.custom-product-item-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.custom-price-discount-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-price-card {
+  display: flex;
+  align-items: center;
+}
+
+.custom-product-item-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #183b56;
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .custom-product-item-title {
+    font-size: 18px;
+  }
+}
+
+.custom-product-item-vendor {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #8c8b8b;
+  line-height: 36px;
+  margin: 0;
+}
+
+.custom-price {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #183b56;
+  margin-right: 12px;
+}
+
+.custom-compare-price {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  text-decoration: line-through;
+  color: #8c8b8b;
+  margin-right: 12px;
+}
+
+.custom-discount {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #e30211;
+  margin-right: 12px;
+}
+
+.custom-add-to-cart-button {
+  height: 35px;
+  background-color: #000000;
+  color: #ffffff;
+}
